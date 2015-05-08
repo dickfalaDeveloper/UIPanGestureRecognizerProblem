@@ -16,7 +16,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+   self.view.multipleTouchEnabled =  YES;
+    UIPanGestureRecognizer *panGesture =
+    [[UIPanGestureRecognizer alloc] initWithTarget:self
+                                            action: @selector(handlePan:)];
+    panGesture.minimumNumberOfTouches = 1;
+    [self.view addGestureRecognizer:panGesture];
+}
+
+
+- (void)handlePan:(UIPanGestureRecognizer *)gesture{
+    
+    UIView *view = gesture.view;
+    
+    if(view.tag == 0)
+    {
+        NSLog(@"======tag == 0 ");
+    }
+    
+    if(view.tag == 1)
+    {
+        NSLog(@"======tag == 1" );
+    }
+    
+    if(gesture.state == UIGestureRecognizerStateBegan){
+        
+    }else if(gesture.state == UIGestureRecognizerStateChanged){
+        
+    }else if(gesture.state == UIGestureRecognizerStateEnded){
+        
+    }
+    NSLog(@" ");
 }
 
 - (void)didReceiveMemoryWarning {
