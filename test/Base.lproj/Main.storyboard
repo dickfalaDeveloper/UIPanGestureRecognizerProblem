@@ -7,52 +7,6 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_base_p.png" translatesAutoresizingMaskIntoConstraints="NO" id="pVn-aR-0MQ">
-                                <rect key="frame" x="241" y="237" width="119" height="126"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_base_p.png" translatesAutoresizingMaskIntoConstraints="NO" id="wSY-DL-OOp">
-                                <rect key="frame" x="408" y="237" width="119" height="126"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="119" id="7it-5J-gZc"/>
-                                    <constraint firstAttribute="height" constant="126" id="NeP-hK-Zgl"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_base_p.png" translatesAutoresizingMaskIntoConstraints="NO" id="jPt-Oy-QBA">
-                                <rect key="frame" x="241" y="390" width="119" height="126"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="5ja-nU-jEm"/>
-                                    <constraint firstAttribute="width" constant="119" id="J3G-Uq-asj"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="pVn-aR-0MQ" secondAttribute="centerX" constant="-0.5" id="2lE-2D-dzw"/>
-                            <constraint firstItem="wSY-DL-OOp" firstAttribute="width" secondItem="pVn-aR-0MQ" secondAttribute="width" id="8VD-LI-HFi"/>
-                            <constraint firstItem="pVn-aR-0MQ" firstAttribute="height" secondItem="jPt-Oy-QBA" secondAttribute="height" id="HPx-M5-Idm"/>
-                            <constraint firstAttribute="centerY" secondItem="pVn-aR-0MQ" secondAttribute="centerY" id="Y5h-7b-D46"/>
-                            <constraint firstAttribute="centerY" secondItem="jPt-Oy-QBA" secondAttribute="centerY" constant="-153" id="gbU-uI-wMC"/>
-                            <constraint firstAttribute="centerX" secondItem="jPt-Oy-QBA" secondAttribute="centerX" constant="-0.5" id="hqY-NC-jgk"/>
-                            <constraint firstAttribute="centerX" secondItem="wSY-DL-OOp" secondAttribute="centerX" constant="-167.5" id="mXb-D3-Pun"/>
-                            <constraint firstAttribute="centerY" secondItem="wSY-DL-OOp" secondAttribute="centerY" id="vii-z5-sNf"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="u5Q-vP-HA8">
             <objects>
                 <viewController id="emz-QH-u8v" customClass="ViewController" sceneMemberID="viewController">
@@ -64,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FM6-PQ-wtf" userLabel="darkView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FM6-PQ-wtf" userLabel="leftscreenView">
                                 <rect key="frame" x="0.0" y="0.0" width="292" height="600"/>
-                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="0.0" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8b-qf-7eI">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8b-qf-7eI" userLabel="rightScreenView">
                                 <rect key="frame" x="293" y="0.0" width="307" height="600"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.59999999999999998" alpha="0.0" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -95,7 +49,4 @@
             <point key="canvasLocation" x="1022" y="377"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="stick_base_p.png" width="128" height="128"/>
-    </resources>
 </document>

@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.leftScreenView.tag = 0;
+    self.rightScreenView.tag = 1;
+    
    self.view.multipleTouchEnabled =  YES;
     UIPanGestureRecognizer *panGesture =
     [[UIPanGestureRecognizer alloc] initWithTarget:self
